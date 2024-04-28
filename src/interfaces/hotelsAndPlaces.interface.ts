@@ -5,8 +5,13 @@ export interface Hotel {
   description: string;
 }
 
+export interface MatchedSubstrings {
+  length: number;
+  offset: number;
+}
+
 export interface SearchObj {
   id: string;
   description: string;
-  matchedSubstrings: any[]
+  matchedSubstrings: MatchedSubstrings[];
 }
